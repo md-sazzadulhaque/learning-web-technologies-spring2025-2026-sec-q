@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender</title>
+</head>
+<body>
+
+<h3>Gender</h3>
+
+<form onsubmit="return checkGender()">
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function checkGender() {
+    var radios = document.getElementsByName("gender");
+    var selected = false;
+
+    for (var i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+            selected = true;
+            break;
+        }
+    }
+
+    if (!selected) {
+        alert("Please select gender!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

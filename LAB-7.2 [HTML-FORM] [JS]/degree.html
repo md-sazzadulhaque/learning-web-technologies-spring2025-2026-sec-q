@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Degree</title>
+</head>
+<body>
+
+<h3>Degree</h3>
+
+<form onsubmit="return checkDegree()">
+    <input type="checkbox" name="deg" value="SSC"> SSC
+    <input type="checkbox" name="deg" value="HSC"> HSC
+    <input type="checkbox" name="deg" value="BSc"> BSc
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function checkDegree() {
+    var boxes = document.getElementsByName("deg");
+    var count = 0;
+
+    for (var i = 0; i < boxes.length; i++) {
+        if (boxes[i].checked) {
+            count++;
+        }
+    }
+
+    if (count == 0) {
+        alert("Please select at least one degree!");
+        return false;
+    }
+
+    return true;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blood Group</title>
+</head>
+<body>
+
+<h3>Blood Group</h3>
+
+<form onsubmit="return checkBlood()">
+    <select id="blood">
+        <option value="">Select</option>
+        <option>A+</option>
+        <option>A-</option>
+        <option>B+</option>
+        <option>B-</option>
+        <option>AB+</option>
+        <option>AB-</option>
+        <option>O+</option>
+        <option>O-</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Submit">
+</form>
+
+<script>
+function checkBlood() {
+    var val = document.getElementById("blood").value;
+    if (val == "") {
+        alert("Please select blood group!");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</body>
+</html>

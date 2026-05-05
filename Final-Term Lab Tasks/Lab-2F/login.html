@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Login</title>
+</head>
+
+<body>
+    <table width="40%" border="1" cellspacing="0" cellpadding="10" align="center">
+        <tr>
+            <td style="display:flex; justify-content:space-between; align-items:center;">
+
+                <h2 style="color:green; margin:0;">XCompany</h2>
+
+                <div>
+                    <a href="home.html">Home</a> |
+                    <a href="login.html">Login</a> |
+                    <a href="Registration.html">Registration</a>
+                </div>
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <form method="post" action="loginCheck.php" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>LOGIN</legend>
+
+                        <table>
+                            <tr>
+                                <td>Username:</td>
+                                <td><input type="text" name="username" value=""></td>
+                            </tr>
+                            <tr>
+                                <td>Password:</td>
+                                <td> <input type="password" name="password" value=""> <br></td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <input type="checkbox" name="remember">Remember Me <br><br>
+                        <input type="submit" name="submit" value="Submit">
+                        <a href="forgotpass.php">Forgot Password?</a>
+                    </fieldset>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                Copyright &copy; 2017
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
